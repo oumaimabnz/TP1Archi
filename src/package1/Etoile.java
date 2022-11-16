@@ -52,5 +52,6 @@ public class Etoile extends FormeCirculaireReguliere {
         leContour.closePath();
         return leContour;
     }
+    
 
 }

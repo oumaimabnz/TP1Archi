@@ -45,4 +45,5 @@ public class PolygoneRegulier extends FormeCirculaireReguliere {
         return leContour;
     }
 
+    
 }
