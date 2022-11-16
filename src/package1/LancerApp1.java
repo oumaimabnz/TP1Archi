@@ -32,7 +32,7 @@ public class LancerApp1 {
 		d.ajouterObjet(lesTrains[0]);
 		lesTrains[1] = new TrainCercleImage(d, 10, imgLeila);
 		d.ajouterObjet(lesTrains[1]);
-		for (int i = 2; i < 10; i++) {
+		for (int i = 2; i < 5; i++) {
 			lesTrains[i] = new TrainCercleCouleur(new Color((float) Math.random(), (float) Math.random(),
 		(float) Math.random()), d, 10, 10);
 		d.ajouterObjet(lesTrains[i]);
@@ -40,13 +40,13 @@ public class LancerApp1 {
 		
 		Visage v = new Visage (d);
 		d.ajouterObjet(v);
-		
 		Forme f1=new Etoile(350,100,50, 8.f ,Color.RED, Color.GREEN);
 		Forme f2=new PolygoneRegulier(5, 240, 40, 40, 4.0f ,Color.BLACK, null);
 		d.ajouterObjet(f1);
 		d.ajouterObjet(f1);
 		d.ajouterObjet(new AnimationForme(new Etoile(350,100,50, 8.f ,Color.RED, Color.YELLOW ),new MvtCirculaire(250,250,180,0,5)));
 		d.ajouterObjet(new AnimationForme(new PolygoneRegulier(5, 240, 40, 40, 4.0f ,Color.DARK_GRAY, null),new MvtCirculaire(250,250,180,0,5)));
+		d.ajouterObjet(new AnimationForme(new Visage (d, 300, 500, 40, 60),new MvtCirculaire(250,250,180,0,5)));
 		
 		while(true) {
 		// la zone de dessin se r�affiche
